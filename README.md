@@ -126,7 +126,7 @@ the response will be in the json format:
 }
 ```
 
-Here is a screenshot of postman test for this operation
+Here is a screenshot of a postman test for this operation
 
 ![Create a person](/assets/postman-test/create-person.png)
 
@@ -139,15 +139,7 @@ This user gets created in our mongoDB collection
 from the API route:
 
 ```http
-https://raim-hng-backend-task2.onrender.com/api/user_id
-```
-
-the request body:
-
-```json
-{
-	"id": "65002087b24a70dc60ac6eaf"
-}
+https://raim-hng-backend-task2.onrender.com/api/65002087b24a70dc60ac6eaf
 ```
 
 the response will be in the json format:
@@ -162,7 +154,7 @@ the response will be in the json format:
 }
 ```
 
-Here is a screenshot of postman test for this operation
+Here is a screenshot of a postman test for this operation
 
 ![Read a person](/assets/postman-test/read-person.png)
 
@@ -171,14 +163,13 @@ Here is a screenshot of postman test for this operation
 from the API route:
 
 ```http
-https://raim-hng-backend-task2.onrender.com/api/user_id
+https://raim-hng-backend-task2.onrender.com/api/65002087b24a70dc60ac6eaf
 ```
 
 the request body:
 
 ```json
 {
-	"id": "65002087b24a70dc60ac6eaf",
   "name": "Essien Mark"
 }
 ```
@@ -194,7 +185,7 @@ the response will be in the json format:
 }
 ```
 
-Here is a screenshot of postman test for this operation
+Here is a screenshot of a postman test for this operation
 
 ![Update a person](/assets/postman-test/update-person.png)
 
@@ -203,15 +194,7 @@ Here is a screenshot of postman test for this operation
 from the API route:
 
 ```http
-https://raim-hng-backend-task2.onrender.com/api/user_id
-```
-
-the request body:
-
-```json
-{
-	"id": "65002087b24a70dc60ac6eaf"
-}
+https://raim-hng-backend-task2.onrender.com/api/65002087b24a70dc60ac6eaf
 ```
 
 the response will be in the json format:
@@ -226,13 +209,13 @@ the response will be in the json format:
 }
 ```
 
-Here is a screenshot of postman test for this operation
+Here is a screenshot of a postman test for this operation
 
 ![Delete a person](/assets/postman-test/delete-person.png)
 
 To handle errors, and validate success, the program makes a few logs on the deployed server console. Below is the logs on the Render deployment console for the above CRUD operations:
 
-![Render logs for CRUD](/assets/deployment/logs.png)
+![Render logs for CRUD](/assets/postman-test/render-logs.png)
 
 
 ## Features

@@ -28,13 +28,18 @@ app.use(bodyParser.json());
 
 // test route
 app.get('/', (req, res) => {
-	res.send('API server is running...')
-})
+	res.send('API server is running...');
+});
+
+// ping route
+app.get('/ping', (req, res) => {
+	res.send('Pong!!, still running...');
+});
 
 // CREATE ROUTE
 app.post('/api', postValidationRules, validateData, createPerson);
 
 // READ, UPDATE AND DELETE ROUTES
-app.use('/api', routes)
+app.use('/api', routes);
 
 app.listen(PORT, console.log(`server is running on port ${PORT}`));
