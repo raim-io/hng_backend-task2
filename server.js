@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const validateData = require('./middlewares/dataValidator');
 const { body } = require('express-validator');
 
-const {createPerson} = require('./controller/controller');
+const {createPerson, readPerson} = require('./controller/controller');
 const routes = require('./routes/router');
 
 const dotenv = require('dotenv');
@@ -35,6 +35,6 @@ app.get('/', (req, res) => {
 app.post('/api', postValidationRules, validateData, createPerson);
 
 // READ, UPDATE AND DELETE ROUTES
-app.use('/api/:user_id', routes)
+app.use('/api', routes)
 
 app.listen(PORT, console.log(`server is running on port ${PORT}`));

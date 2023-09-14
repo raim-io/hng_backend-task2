@@ -1,14 +1,14 @@
 const express = require('express');
 const {
-	readPerson,
+	readPersonByIdOrName,
 	updatePerson,
 	deletePerson
 } = require('../controller/controller');
 
 const router = express.Router();
 
-router.route('/')
-	.get(readPerson)
+router.route('/:user_id')
+	.get(readPersonByIdOrName)
 	.put(updatePerson)
 	.delete(deletePerson);
 

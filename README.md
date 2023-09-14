@@ -237,7 +237,18 @@ To handle errors, and validate success, the program makes a few logs on the depl
 
 ## Features
 
-C - R - U - D
+Being a CRUD REST API, it has the capabilities to:
+
+- `CREATE`: Adding a new person.  =>`/api`
+- `READ`: Fetching details of a person.  => `/api/user_id`
+- `UPDATE`: Modifying details of an existing person => `/api/user_id`
+- `DELETE`: Removing a person => `/api/user_id`
+
+In adding to:
+
+- Error handling
+- Data validation
+- Dynamic Parameter Handling
 
 
 ## Deployment
